@@ -314,9 +314,13 @@ text-align: center;
   text-align: center;
 }
 #solving-rating{
-  font-size: 60px;
+  font-size: 45px;
   color:#41E418 ;
   text-align: center;
+}
+#handle{
+font-size: 20px;
+color:red
 }
 #get-in-t
 {
