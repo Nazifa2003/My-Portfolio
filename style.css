@@ -5,17 +5,23 @@ a{
     color: #fff;
     text-decoration: none;
 }
+section {
+  scroll-margin-top: 90px;
+}
+
 .navbar{
     position: fixed;
     left: 0;
     top:0;
+     height: 50px;
+     z-index: 1000;
     width:100%;
     padding-right: 100px;
-    background: #46454D;
+    background:#1A0D3B ;
     display :flex;
     justify-content: flex-end;
     align-items:center;
-    margin-right: 10%;
+    margin-right: 10px;
 }
 .navbar ul{
     display: flex;
@@ -26,55 +32,62 @@ a{
     margin-left: 35px;
 }
 .navbar ul li a{
-    /* Home Education Project Achievement Publication Blog About Contact */
     font-size: 20px;
     font-weight: 500;
     transition: .5s;
 }
 .navbar ul li:hover a{
-    color: burlywood;
+    color: rgb(197, 241, 36);
 }
-.home{
+.navbar ul li a.active{
+    color:aqua;
+}
+.Profile-photo{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    height: 100vh;
-    padding: 60px 9% 0;
-    color:#fff
+    padding-left:25px;
+}
+.Profile-photo img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 25px;
+    border: 15px ;
 }
 #name{
-    font-size:48px;
+    font-size:45px;
     font-weight: bolder;
     font-family: "inter";
-    padding-right: 40px; 
+    padding-right: 55px; 
 }
 .home {
     display: flex;
-    justify-content: flex-end;  /* ব্লককে right এ নেবে */
-    padding-right: 80px;        /* right থেকে gap */
-    padding-top: 120px;
-    
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; 
+    color: #fff;
+    padding-left: 50px;
+    gap: 50px;
+}
+.home-info{
+    max-width: 600px;
+    margin-top: 100px;
+}
+.home-info h2{
+    font-size: 42px;
+    line-height: 48px;
+    margin-bottom: 10px;
 }
 
-.home-info {
-position: absolute;
-width: 729px;
-height: 262px;
-left: 671px;
-top: 382px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 38px;
-color: #FFFFFF;
-padding-right: 40px;
-        margin-top: 80px;
+#intro{
+    font-size: 28px;
+    line-height: 29px;
+    margin-bottom: 10px;
 }
-.homeinfo{
-    
-    line-height: 25px;    
-    font-size: 23px;      
-     margin-top: -5px;    
+.University{
+    font-size: 18px;
+    line-height: 24px;
 }
 #CV{
    display: inline-block;
@@ -92,9 +105,8 @@ padding-right: 40px;
     align-items: center;
     height: 40px;
     width: 40px;
-    background: #ffffff22;   /* হালকা white transparent bg */
-    border-radius: 50%;      /* circle */
-
+    background: #ffffff22;   
+    border-radius: 50%;      
     margin-right: 10px;
     transition: .3s;
 }
@@ -103,24 +115,307 @@ padding-right: 40px;
     color: #fff;
 }
 .sci a:hover {
-    background: burlywood;   /* hover করলে color change */
+    background: rgb(128, 243, 137);   
 }
-.sci a:hover i {
-    color: #070327; /* hover এ icon color change চাইলে */
-}
+
 .sci {
-    margin-top: 30px; /* CV button-এর নিচে সুন্দর gap */
+    margin-top: 30px; 
 }
-.Image{
-    /* Ellipse 1 */
-
-position: absolute;
-width: 330px;
-height: 330px;
-left: 70px;
-top: 237px;
-
-background: #D9D9D9;
-
+.boardxm{
+    color: #fff;
+    font-weight: bold;
+    margin-top: 30px;
+    
+}
+.education {
+  display: flex;
+  justify-content: center;
+}
+.heading-color{
+    color: aqua;
+    text-align: center;
+    font-weight: bolder;
+}
+.Education-info{
+    color: #fff;
+     width: 80%;
+  margin: 0 auto;
+  transform: translateX(45px);
+  transform: translateY(70px);
+}
+.column{
+     display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+.edu-right,
+.edu-left{
+  width: 45%;
+}
+.edu-center{
+text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.edu-center p{
+    text-align: left;
+    margin: 0 auto;
+  width: fit-content;
+}
+.Book-pencil img{
+    position: absolute;
+    width: 35px;   
+    height: 35px; 
+}
+.Project-info {
+  display: flex;
+  justify-content: center;
+  gap: 30px;              
+  flex-wrap: wrap;       
+  margin-top: 120px;
 }
 
+.project-topic {
+  width: 260px;
+  height: 340px;
+  background-color: rgb(202, 190, 228);
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+.project-topic:hover {
+  transform: translateY(-10px);
+}
+.project-topic img {
+  width: 105%;
+  height: 250px;       
+  object-fit: cover;  
+  border-radius: 15px;
+}
+.project-topic p {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #070327;
+  margin: 5px 0 0;
+}
+#pro{
+    margin-top: 110px;
+}
+#achieve{
+    margin-top: 10%;
+}
+.achievement {
+  padding: 120px 80px;
+  color: #fff;
+}
+.ach-title {
+  text-align: center;
+  font-size: 36px;
+  color: #7CFF4E;
+  margin-bottom: 80px;
+  letter-spacing: 2px;
+}
+.Achievement-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  color: #fff;
+  padding: 9%;
+}
+.a-column {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.ach-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+.ach-item i {
+  font-size: 28px;
+  color: #7CFF4E;
+  margin-top: 5px;
+}
+.ach-item p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.ach-item strong {
+  font-weight: 600;
+}
+.Publication-info
+{
+    color:#999999;
+    font-size: xx-large;
+    text-align: center;
+     padding: 8%;
+}
+#pub
+{
+    margin-top: 10%;
+}
+.Blog-info
+{
+    color:#999999;
+    font-size: xx-large;
+    text-align: center;
+    padding: 8%;
+}
+#blog
+{
+     margin-top: 10%;
+}
+#about-dis{
+  text-align: center;
+  color: #fff;
+  font-size: x-large;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+  font-style: italic;
+  transform: translateX(40px);
+  transform: translateY(30px);
+  display:block
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+.about{
+  margin:30%
+}
+.skills-info
+{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.skills-info div {
+  background-color: #1A1636;
+  padding: 20px;
+  font-size: 30px;
+  color: #fff;
+  border-radius: 10%;
+   
+}
+.skill-box{
+  height: 250px;
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+}
+#solving-rating{
+  font-size: 60px;
+  color:#41E418 ;
+  text-align: center;
+}
+#get-in-t
+{
+  margin-top: 25px;
+}
+#contact-dis
+{
+  text-align: center;
+  color: #fff;
+  font-size: x-large;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+  font-style: italic;
+  transform: translateX(40px);
+  transform: translateY(30px);
+  display:block
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+.contact-container{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+.contact-card{
+  background: rgba(255,255,255,0.06);
+  padding: 35px;
+  border-radius: 30px;
+  width: 420px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.contact-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  background: #7a7a7a;
+  border: none;
+  outline: none;
+  padding: 14px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+  color: #eee;
+}
+
+.contact-form button{
+  width: 120px;
+  align-self: center;
+  margin-top: 15px;
+  background: aqua;
+  color: #000;
+  border: none;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.contact-form button:hover{
+  transform: translateY(-5px);
+}
+
+.contact-details h3{
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-item{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #7a7a7a;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.contact-item i{
+  font-size: 22px;
+  color: #000;
+
+}
+.contact-item :hover{
+  color: #000;
+  transform: translateY(-10px);
+}
