@@ -67,9 +67,7 @@ The UI/UX of this portfolio was designed in Figma before development.
 **🚀 Live Demo**
 
 🔗 Portfolio Website:https://nazifa2003.github.io/My-Portfolio/
-👉 Add your GitHub Pages live link here
 
-https://your-username.github.io/portfolio-repository-name/
 ---
 **🔗 Social & Coding Profiles**
 
