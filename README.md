@@ -1,7 +1,6 @@
 # 🌐 Personal Portfolio Website
 
 A modern and responsive personal portfolio website designed and developed to showcase my academic background, projects, achievements, skills, and contact information.
-
 This portfolio reflects my journey as a **Computer Science and Engineering (CSE) undergraduate**, highlighting both my technical and problem-solving skills.
 
 ---
