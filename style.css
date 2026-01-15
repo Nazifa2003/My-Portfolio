@@ -246,18 +246,26 @@ text-align: center;
   margin-top: 5px;
 }
 .ach-item p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
 }
 .ach-item strong {
-  font-weight: 600;
+  font-weight: 500px;
 }
 .Publication-info
 {
-    color:#999999;
-    font-size: xx-large;
+    color:#1d1c1c;
+    font-size: 18px;
     text-align: center;
-     padding: 8%;
+     background-color:#ece5e5;
+     width: 300px;
+     height: 180px;        
+  margin-top: 20%;    
+       margin-left: 40%;
+       margin-bottom: 15%;         
+  border-radius: 8px;
+  border-left: 4px solid #7CFF4E;  
+  line-height: 1.6;
 }
 #pub
 {
@@ -265,10 +273,18 @@ text-align: center;
 }
 .Blog-info
 {
-    color:#999999;
-    font-size: xx-large;
+   color:#161414;
+    font-size: 18px;
     text-align: center;
-    padding: 8%;
+     
+     background-color:#ece5e5;
+     width: 300px;        
+  margin-top: 20%;    
+       margin-left: 40%;
+       margin-bottom: 15%;
+  border-radius: 8px;
+  border-left: 4px solid #7CFF4E;  
+  line-height: 1.6;
 }
 #blog
 {
