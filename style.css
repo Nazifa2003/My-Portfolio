@@ -28,7 +28,7 @@ section {
     padding-right: 20px;
 }
 .navbar ul li{
-    list-style: none;
+    list-style:none;
     margin-left: 35px;
 }
 .navbar ul li a{
@@ -49,11 +49,11 @@ section {
     padding-left:25px;
 }
 .Profile-photo img{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
-    padding: 25px;
-    border: 15px ;
+    padding: 0px;
+    border: 8px solid rgb(3, 75, 80);
 }
 #name{
     font-size:45px;
@@ -162,6 +162,7 @@ text-align: center;
     text-align: left;
     margin: 0 auto;
   width: fit-content;
+  
 }
 .Book-pencil img{
     position: absolute;
@@ -298,8 +299,7 @@ text-align: center;
   font-style: italic;
   transform: translateX(40px);
   transform: translateY(30px);
-  display:block
-  justify-content: center;
+  display:block;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 5%;
@@ -351,7 +351,7 @@ color:red
   font-style: italic;
   transform: translateX(40px);
   transform: translateY(30px);
-  display:block
+  display:block;
   justify-content: center;
   padding-left: 10%;
   padding-right: 10%;
