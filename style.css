@@ -1,6 +1,8 @@
-body{
-    background-color: #070327;
+body {
+  background:#030016;
+  color: #e5e7eb;  
 }
+
 a{
     color: #fff;
     text-decoration: none;
@@ -17,7 +19,7 @@ section {
      z-index: 1000;
     width:100%;
     padding-right: 100px;
-    background:#1A0D3B ;
+    background:#0e0429 ;
     display :flex;
     justify-content: flex-end;
     align-items:center;
@@ -53,7 +55,7 @@ section {
     height: 350px;
     border-radius: 50%;
     padding: 0px;
-    border: 8px solid rgb(3, 75, 80);
+    border: 8px solid rgb(48, 48, 49);
 }
 #name{
     font-size:45px;
@@ -91,14 +93,18 @@ section {
 }
 #CV{
    display: inline-block;
-   height: 40px;
-   width: 150px;
+   height: 30px;
+   width: 120px;
    background-color: #21790B;
    border-radius: 15px;
    font-size: 20px;
    padding: 8px 15px;
    margin-top: 20px;
 }
+#CV:hover {
+  background-color: #22c55e; /* subtle green */
+}
+
 .sci a {
     display: inline-flex;
     justify-content: center;
@@ -115,27 +121,38 @@ section {
     color: #fff;
 }
 .sci a:hover {
-    background: rgb(128, 243, 137);   
+    background: #22c55e;   
 }
 
 .sci {
     margin-top: 30px; 
 }
-.boardxm{
-    color: #fff;
-    font-weight: bold;
-    margin-top: 30px;
-    
-}
-.education {
-  display: flex;
-  justify-content: center;
-}
 .heading-color{
     color: aqua;
     text-align: center;
     font-weight: bolder;
+    margin-bottom:60px ;
 }
+.boardxm{
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 70px;
+    margin-left: 160px;
+    height: 150px;
+    width: 780px;
+    padding-left: 2%;
+    background-color: #024d50;
+    border-radius: 15px;
+    border-left:4px solid #eee;
+    transition: all 0.4s ease;  
+}
+.boardxm:hover {
+    border-left: 6px solid #98d2e9; /* hover accent blue */
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
 .Education-info{
     color: #fff;
      width: 80%;
@@ -143,31 +160,10 @@ section {
   transform: translateX(45px);
   transform: translateY(70px);
 }
-.column{
-     display: flex;
-  justify-content: center;
-  gap: 60px;
-  margin-bottom: 40px;
-}
-.edu-right,
-.edu-left{
-  width: 45%;
-}
-.edu-center{
-text-align: center;
-  max-width: 500px;
-  margin: 0 auto;
-}
-.edu-center p{
-    text-align: left;
-    margin: 0 auto;
-  width: fit-content;
-  
-}
-.Book-pencil img{
-    position: absolute;
-    width: 35px;   
-    height: 35px; 
+.descripttion {
+font-size: 18px;
+font-weight: lighter;
+ color: #e5e7eb;
 }
 .Project-info {
   display: flex;
@@ -216,43 +212,41 @@ text-align: center;
   padding: 120px 80px;
   color: #fff;
 }
-.ach-title {
-  text-align: center;
-  font-size: 36px;
-  color: #7CFF4E;
-  margin-bottom: 80px;
-  letter-spacing: 2px;
-}
+
 .Achievement-info {
   display: flex;
   justify-content: space-between;
-  gap: 80px;
-  color: #fff;
-  padding: 9%;
-}
-.a-column {
-  width: 48%;
-  display: flex;
-  flex-direction: column;
   gap: 60px;
 }
-.ach-item {
+
+.a-column {
+  width: 50%;
   display: flex;
-  align-items: flex-start;
-  gap: 25px;
+  flex-direction: column;
+  gap: 30px;
 }
-.ach-item i {
-  font-size: 28px;
-  color: #7CFF4E;
-  margin-top: 5px;
+
+.achievement-box {
+  background:  linear-gradient(135deg, #0f172a, #1e293b);/* rgba(255, 255, 255, 0.05)#0f172a*/;
+  border-left: 5px solid #7CFF4E;
+  color: #e5e7eb;
+  border-radius: 15px;
+  padding: 20px 25px;
+  min-height: 110px;
+  transition: all 0.4s ease;
 }
-.ach-item p {
-  font-size: 18px;
-  line-height: 1.6;
+
+.achievement-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+  border-left: 6px solid aqua;
 }
-.ach-item strong {
-  font-weight: 500px;
+
+.achievement-box p {
+  font-size: 17px;
+  line-height: 1.5;
 }
+
 .Publication-info
 {
     color:#1d1c1c;
@@ -293,30 +287,27 @@ text-align: center;
 }
 #about-dis{
   text-align: center;
-  color: #fff;
-  font-size: x-large;
-  font-family:Georgia, 'Times New Roman', Times, serif ;
-  font-style: italic;
-  transform: translateX(40px);
-  transform: translateY(30px);
+  color:#e5e7eb ;
+  font-size: 20px; 
+  max-width: 900px;
+  margin: 40px auto;
+  line-height: 1.7;
   display:block;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
+  
 }
 .about{
-  margin:30%
+  margin:80px auto
 }
 .skills-info
 {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 25px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 .skills-info div {
-  background-color: #1A1636;
+  background: #0f172a;
+  border-left: 4px solid #41E418;
   padding: 20px;
   font-size: 30px;
   color: #fff;
@@ -324,38 +315,48 @@ text-align: center;
    
 }
 .skill-box{
-  height: 250px;
-  width: 250px;
-  padding: 15px;
+  height: 235px;
+  width: 230px;
+  padding: 20px;
   text-align: center;
+  text-align: center;
+  background: #0f172a;
+  border-left: 4px solid #41E418;
+  border-radius: 16px;
+  transition: all 0.4s ease;
+  color:antiquewhite;
+}
+.skill-box:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+.skill-item{
+  font-size: 25px;
+  font-weight: lighter;
 }
 #solving-rating{
-  font-size: 45px;
+  font-size: 42px;
   color:#41E418 ;
   text-align: center;
 }
 #handle{
-font-size: 20px;
-color:red
+font-size: 16px;
+color:#94a3b8;
 }
 #get-in-t
 {
-  margin-top: 25px;
+  margin-top: 45px;
 }
 #contact-dis
 {
   text-align: center;
   color: #fff;
   font-size: x-large;
-  font-family:Georgia, 'Times New Roman', Times, serif ;
-  font-style: italic;
-  transform: translateX(40px);
-  transform: translateY(30px);
+ 
+  transform: translateX(40px,30px);
   display:block;
   justify-content: center;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
+  
 }
 .contact-container{
   display: flex;
@@ -380,7 +381,7 @@ color:red
 
 .contact-form input,
 .contact-form textarea{
-  background: #7a7a7a;
+  background:#8f8e8e;
   border: none;
   outline: none;
   padding: 14px;
@@ -422,7 +423,7 @@ color:red
   display: flex;
   align-items: center;
   gap: 15px;
-  background: #7a7a7a;
+  background: #8f8e8e;
   padding: 12px 15px;
   border-radius: 10px;
   margin-bottom: 15px;
