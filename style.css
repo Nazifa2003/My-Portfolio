@@ -315,7 +315,7 @@ font-weight: lighter;
    
 }
 .skill-box{
-  height: 235px;
+  height: auto;
   width: 230px;
   padding: 20px;
   text-align: center;
@@ -331,7 +331,7 @@ font-weight: lighter;
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 .skill-item{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: lighter;
 }
 #solving-rating{
